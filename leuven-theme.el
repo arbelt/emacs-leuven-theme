@@ -63,7 +63,7 @@ Semantic, and Ansi-Color faces are included -- and much more...")
 
   (custom-theme-set-faces
    'leuven
-   `(default ((,class (:background "#f8f8f8" :foreground "#333333"))))
+   `(default ((,class (:background "#f3f3f3" :foreground "#333333"))))
    `(bold ((,class (:weight bold :foreground "black"))))
    `(bold-italic ((,class (:weight bold :slant italic :foreground "black"))))
    `(italic ((,class (:slant italic :foreground "#1A1A1A"))))
