@@ -41,7 +41,7 @@ Basic, Font Lock, Isearch, Gnus, Message, Diff, Ediff, Flyspell,
 Semantic, and Ansi-Color faces are included -- and much more...")
 
 (let ((class '((class color) (min-colors 89)))
-      (sans-family "Helvetica")
+      (sans-family "Open Sans")
       ;; Leuven generic colors
       (cancel '(:slant italic :strike-through t :foreground "gray55"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
@@ -81,8 +81,9 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(bold-italic ((,class (:weight bold :slant italic :foreground "black"))))
    `(italic ((,class (:slant italic :foreground "#1A1A1A"))))
    `(underline ((,class (:underline t))))
-   `(cursor ((,class (:background "#15FF00"))))
-
+   ;; `(cursor ((,class (:background "#15FF00"))))
+   `(cursor ((,class (:background "#333333"))))
+   
    ;; Highlighting faces
    `(fringe ((,class (:foreground "#56B556" :background "#E2F9E2"))))
    `(highlight ((,class ,volatile-highlight)))
@@ -409,10 +410,10 @@ Semantic, and Ansi-Color faces are included -- and much more...")
    `(ilog-echo-face ((,class (:height 2.0 :foreground "#006FE0"))))
    `(ilog-load-face ((,class (:foreground "#BA36A5"))))
    `(ilog-message-face ((,class (:foreground "#808080"))))
-   `(info-file ((,class (:family "Sans Serif" :height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
+   `(info-file ((,class (:family ,sans-family :height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
    `(info-header-node ((,class (:foreground "orange" :underline t)))) ;; nodes in header
    `(info-header-xref ((,class (:foreground "dodger blue" :underline t)))) ;; cross references in header
-   `(info-menu-header ((,class (:family "Sans Serif" :height 1.6 :weight bold :foreground "#00CC00" :underline t)))) ;; menu titles (headers) -- major topics
+   `(info-menu-header ((,class (:family ,sans-family :height 1.6 :weight bold :foreground "#00CC00" :underline t)))) ;; menu titles (headers) -- major topics
    `(info-menu-star ((,class (:foreground "black")))) ;; every 3rd menu item
    `(info-node ((,class (:foreground "blue" :underline t)))) ;; node names
    `(info-quoted-name ((,class ,code-inline)))
